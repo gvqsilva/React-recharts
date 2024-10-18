@@ -7,7 +7,7 @@ const Home = () => {
   const [temperatura, setTemperatura] = useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:5000/temperatura")
+    fetch("https://bd-1-espg-tau.vercel.app/temperatura")
     .then((res)=>{
       return res.json();
     })
